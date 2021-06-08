@@ -22,5 +22,6 @@ Ex: 'carcear' -> true ('carcear is a permutation of 'racecar')
 
 - Is an empty string a palindrome? _Yes_
 - Is a string with one character a palindrome? _Yes_
-- How should we treat spaces or special characters? _Ignore spaces and special characters_
+- How should we treat spaces? _Ignore spaces_
+- How should we treat special characters? _Assume the string contains no special characters_
 - Should the function be case-sensitive? _No_

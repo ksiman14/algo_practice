@@ -37,4 +37,26 @@ const isPermutation = (str1, str2) => {
 };
 
 //Palindrome Permutation
-const palindromePerm = (str) => {};
+const palindromePerm = (str) => {
+  const chars = {};
+
+  let unevens = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    const current = str[i].toLowerCase();
+
+    if (current && chars[current]) {
+      chars[current]++;
+      if (chars[current] % 2 === 0) {
+        unevens--;
+      } else {
+        unevens++;
+      }
+    } else if (current) {
+      chars[current] = 1;
+      unevens++;
+    }
+  }
+
+  return unevens <= 1;
+};

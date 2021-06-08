@@ -52,8 +52,8 @@ describe('Palindrome Permutation', () => {
     expect(palindromePerm('hello world')).toBe(false);
   });
 
-  it('ignores spaces and special characters', () => {
-    expect(palindromePerm('was it a car or a cat I saw?')).toBe(true);
+  it('ignores spaces', () => {
+    expect(palindromePerm('was it a car or a cat I saw')).toBe(true);
   });
 
   it('returns true for an empty or single-character string', () => {
