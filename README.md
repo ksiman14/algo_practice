@@ -24,3 +24,7 @@ Linked Lists:
 Trees and Graphs:
 
 - Depth-first Search
+
+Math and Logic:
+
+- Nth Fibonacci
