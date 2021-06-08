@@ -17,6 +17,10 @@ Arrays:
 
 - Two Sum
 
+Linked Lists:
+
+- Remove Duplicates
+
 Trees and Graphs:
 
 - Depth-first Search

@@ -12,15 +12,10 @@ describe('Depth First Search', () => {
   const K = new Node('K');
 
   it("returns the tree's values in depth-first order", () => {
-    start.addChild(B);
-    start.addChild(C);
-    start.addChild(D);
-    B.addChild(E);
-    B.addChild(F);
-    D.addChild(G);
-    D.addChild(H);
-    F.addChild(I);
-    F.addChild(J);
+    start.addChild(B).addChild(C).addChild(D);
+    B.addChild(E).addChild(F);
+    D.addChild(G).addChild(H);
+    F.addChild(I).addChild(J);
     G.addChild(K);
 
     expect(start.depthFirstSearch([])).toEqual([
