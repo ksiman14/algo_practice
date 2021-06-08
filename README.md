@@ -16,3 +16,7 @@ Strings:
 Arrays:
 
 - Two Sum
+
+Trees and Graphs:
+
+- Depth-first Search
