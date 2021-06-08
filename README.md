@@ -13,6 +13,7 @@ Strings:
 - isUnique
 - isPermutation
 - Palindrome Permutation
+- One Edit
 
 Arrays:
 

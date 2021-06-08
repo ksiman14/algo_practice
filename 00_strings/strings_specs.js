@@ -61,3 +61,23 @@ describe('Palindrome Permutation', () => {
     expect(palindromePerm('P')).toBe(true);
   });
 });
+
+describe('One Edit', () => {
+  it('returns true if one character has been inserted', () => {
+    expect(oneEdit('play', 'plays')).toBe(true);
+  });
+
+  it('returns true if one character has been removed', () => {
+    expect(oneEdit('breach', 'beach')).toBe(true);
+  });
+
+  it('returns true if one character has been replaced', () => {
+    expect(oneEdit('bay', 'pay')).toBe(true);
+  });
+
+  it('returns false if more than one edit has been made', () => {
+    expect(oneEdit('boy', 'girl')).toBe(false);
+    expect(oneEdit('breach', 'bach')).toBe(false);
+    expect(oneEdit('bay', 'pray')).toBe(false);
+  });
+});

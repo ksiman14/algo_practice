@@ -25,3 +25,7 @@ Ex: 'carcear' -> true ('carcear is a permutation of 'racecar')
 - How should we treat spaces? _Ignore spaces_
 - How should we treat special characters? _Assume the string contains no special characters_
 - Should the function be case-sensitive? _No_
+
+#### One Edit
+
+Given two strings, write a function that returns true if they are one (or zero) edits away from each other, and false if not. There are three types of edits: insert a character, remove a character, or replace a character.
