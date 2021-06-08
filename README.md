@@ -12,6 +12,7 @@ Strings:
 
 - isUnique
 - isPermutation
+- Palindrome Permutation
 
 Arrays:
 

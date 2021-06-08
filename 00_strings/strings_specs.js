@@ -42,3 +42,22 @@ describe('isPermutation', () => {
     expect(isPermutation('', '')).toBe(true);
   });
 });
+
+describe('Palindrome Permutation', () => {
+  it('returns true when the input is a permutation of a palindrome', () => {
+    expect(palindromePerm('nana')).toBe(true);
+  });
+
+  it('returns false when the input is not a permutation of a palindrome', () => {
+    expect(palindromePerm('hello world')).toBe(false);
+  });
+
+  it('ignores spaces and special characters', () => {
+    expect(palindromePerm('was it a car or a cat I saw?')).toBe(true);
+  });
+
+  it('returns true for an empty or single-character string', () => {
+    expect(palindromePerm('')).toBe(true);
+    expect(palindromePerm('P')).toBe(true);
+  });
+});

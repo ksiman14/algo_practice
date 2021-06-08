@@ -35,3 +35,6 @@ const isPermutation = (str1, str2) => {
 
   return true;
 };
+
+//Palindrome Permutation
+const palindromePerm = (str) => {};
