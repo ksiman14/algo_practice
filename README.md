@@ -17,6 +17,7 @@ Strings:
 Arrays:
 
 - Two Sum
+- Binary Search
 
 Linked Lists:
 
