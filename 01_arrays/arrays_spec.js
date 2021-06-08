@@ -22,3 +22,17 @@ describe('Two Sum', () => {
     expect(result2).toEqual([-9, 14]);
   });
 });
+
+describe('Binary Search', () => {
+  it('returns the index of the target if it is included in the array', () => {
+    expect(binarySearch([1, 5, 9, 22, 37, 98, 102]), 9).toBe(2);
+  });
+
+  it('returns -1 if the target is not included in the array', () => {
+    expect(binarySearch([1, 5, 9, 22, 37, 98, 102]), 12).toBe(-1);
+  });
+
+  it('returns -1 if the array is empty', () => {
+    expect(binarySearch([], 1)).toBe(-1);
+  });
+});

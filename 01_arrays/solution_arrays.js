@@ -14,3 +14,7 @@ const twoSum = (arr, target) => {
 
   return pair;
 };
+
+// binarySearch
+
+const binarySearch = (arr, target) => {};
