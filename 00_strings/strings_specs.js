@@ -16,3 +16,29 @@ describe('isUnique', () => {
     expect(isUnique('aBcDe')).toBe(true);
   });
 });
+
+describe('isPermutation', () => {
+  it('returns true if the strings are permutations', () => {
+    expect(isPermutation('abc', 'cba')).toBe(true);
+
+    expect(isPermutation('hello world', 'dlrow olleh')).toBe(true);
+  });
+
+  it('returns false if the strings are not permutations', () => {
+    expect(isPermutation('hello world', 'world lehl')).toBe(false);
+  });
+
+  it('is case sensitive', () => {
+    expect(isPermutation('HeLlo', 'hello')).toBe(false);
+
+    expect(isPermutation('WoRlD', 'oWRDl')).toBe(true);
+  });
+
+  it('returns false if exactly one string is empty', () => {
+    expect(isPermutation('hello world', '')).toBe(false);
+  });
+
+  it('returns true if both strings are empty', () => {
+    expect(isPermutation('', '')).toBe(true);
+  });
+});
