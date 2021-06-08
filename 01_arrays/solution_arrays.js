@@ -17,4 +17,16 @@ const twoSum = (arr, target) => {
 
 // binarySearch
 
-const binarySearch = (arr, target) => {};
+const binarySearch = (arr, target, start = 0) => {
+  if (arr.length < 1) return -1;
+
+  const mid = Math.floor(arr.length / 2);
+
+  if (arr[mid] === target) return start + mid;
+
+  if (arr[mid] > target) {
+    return binarySearch(arr.slice(0, mid), target, start);
+  } else {
+    return binarySearch(arr.slice(mid + 1), target, start + mid + 1);
+  }
+};
