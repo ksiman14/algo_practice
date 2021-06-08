@@ -1,0 +1,10 @@
+{
+  "name": "algo_practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "devDependencies": {
+    "testem": "^3.4.2"
+  }
+}
