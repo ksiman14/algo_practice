@@ -90,3 +90,7 @@ const oneEdit = (str1, str2) => {
 
   return true;
 };
+
+// String Shrink
+
+const strShrink = (str) => {};

@@ -14,6 +14,7 @@ Strings:
 - isPermutation
 - Palindrome Permutation
 - One Edit
+- String Shrink
 
 Arrays:
 

@@ -82,3 +82,16 @@ describe('One Edit', () => {
     expect(oneEdit('bay', 'bayou')).toBe(false);
   });
 });
+
+describe('String Shrink', () => {
+  it('returns a compressed string when the compression is shorter than the original', () => {
+    expect(strShrink('ooooops')).toBe('o5p1s1');
+    expect(strShrink('oooohnoooo')).toBe('o4h1n1o4');
+    expect(strShrink('aaabcccdd')).toBe('a3b1c3d2');
+  });
+
+  it('returns the original string when the compressed string is longer', () => {
+    expect(strShrink('pools')).toBe('pools');
+    expect(strShrink('hello')).toBe('hello');
+  });
+});

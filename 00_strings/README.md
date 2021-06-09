@@ -29,3 +29,12 @@ Ex: 'carcear' -> true ('carcear is a permutation of 'racecar')
 #### One Edit
 
 Given two strings, write a function that returns true if they are one (or zero) edits away from each other, and false if not. There are three types of edits: insert a character, remove a character, or replace a character.
+
+#### String Shrink
+
+Given a string, write a function to "shrink" the string using the counts of repeated characters. If the "shrunk" string would be longer than the original, the function should just return the original string. Assume the string has no spaces or special characters.
+
+Ex: 'baaaa' -> 'b1a4'
+Ex: 'mississippi' -> 'mississippi' ('m1i1s2i1s2i1p2i1' is longer)
+
+- Should the function be case-sensitive? _No_
