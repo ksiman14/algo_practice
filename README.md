@@ -20,6 +20,7 @@ Arrays:
 
 - Two Sum
 - Binary Search
+- Rotate Matrix
 
 Linked Lists:
 

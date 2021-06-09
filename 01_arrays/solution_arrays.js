@@ -30,3 +30,6 @@ const binarySearch = (arr, target, start = 0) => {
     return binarySearch(arr.slice(mid + 1), target, start + mid + 1);
   }
 };
+
+//Rotate Matrix
+const rotateMatrix = (matrix) => {};

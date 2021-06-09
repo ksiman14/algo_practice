@@ -36,3 +36,37 @@ describe('Binary Search', () => {
     expect(binarySearch([], 1)).toBe(-1);
   });
 });
+
+describe('Rotate Matrix', () => {
+  const myMatrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ];
+
+  it('rotates the given matrix 90 degrees', () => {
+    expect(rotateMatrix(myMatrix)).toEqual([
+      [7, 4, 1],
+      [8, 5, 2],
+      [9, 6, 3],
+    ]);
+
+    expect(
+      rotateMatrix([
+        [1, 0],
+        [0, 1],
+      ])
+    ).toEqual([
+      [0, 1],
+      [1, 0],
+    ]);
+  });
+
+  it('rotates the matrix in place', () => {
+    expect(rotateMatrix(myMatrix)).toBe(myMatrix);
+  });
+
+  it('returns an empty matrix when the given matrix is empty', () => {
+    expect(rotateMatrix([])).toEqual([]);
+  });
+});
