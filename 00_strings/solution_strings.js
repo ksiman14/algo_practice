@@ -60,3 +60,29 @@ const palindromePerm = (str) => {
 
   return unevens <= 1;
 };
+
+//One Edit
+const oneEdit = (str1, str2) => {
+  let edits = 0;
+  let idx1 = 0;
+  let idx2 = 0;
+
+  while (idx1 < str1.length && idx2 < str2.length) {
+    if (str1[idx1] === str2[idx2]) {
+      idx1++;
+      idx2++;
+    } else {
+      edits++;
+      if (str1[idx1 + 1] === str2[idx2]) {
+        idx1++;
+      } else if (str1[idx1] === str2[idx2 + 1]) {
+        idx2++;
+      } else {
+        idx1++;
+        idx2++;
+      }
+    }
+  }
+
+  return edits <= 1;
+};
