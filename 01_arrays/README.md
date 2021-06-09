@@ -16,6 +16,6 @@ Given a sorted array of integers and a target integer, use a Binary Search algor
 
 #### Rotate Matrix
 
-Given an NxN matrix, write a function to rotate the matrix IN PLACE by 90 degrees.
+Given an NxN matrix, write a function to rotate the matrix by 90 degrees.
 
 Ex: [[1, 0], [0, 1]] -> [[0, 1], [1, 0]]

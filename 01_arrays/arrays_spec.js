@@ -44,11 +44,22 @@ describe('Rotate Matrix', () => {
     [7, 8, 9],
   ];
 
+  const anotherMatrix = [
+    [4, 8, 12, 15][(3, 7, 11, 15)][(2, 6, 10, 14)][(1, 5, 9, 13)],
+  ];
+
   it('rotates the given matrix 90 degrees', () => {
     expect(rotateMatrix(myMatrix)).toEqual([
       [7, 4, 1],
       [8, 5, 2],
       [9, 6, 3],
+    ]);
+
+    expect(rotatematrix(anotherMatrix)).toEqual([
+      [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12],
+      [13, 14, 15, 16],
     ]);
 
     expect(
@@ -60,10 +71,6 @@ describe('Rotate Matrix', () => {
       [0, 1],
       [1, 0],
     ]);
-  });
-
-  it('rotates the matrix in place', () => {
-    expect(rotateMatrix(myMatrix)).toBe(myMatrix);
   });
 
   it('returns an empty matrix when the given matrix is empty', () => {
