@@ -79,5 +79,6 @@ describe('One Edit', () => {
     expect(oneEdit('boy', 'girl')).toBe(false);
     expect(oneEdit('breach', 'bach')).toBe(false);
     expect(oneEdit('bay', 'pray')).toBe(false);
+    expect(oneEdit('bay', 'bayou')).toBe(false);
   });
 });

@@ -63,6 +63,9 @@ const palindromePerm = (str) => {
 
 //One Edit
 const oneEdit = (str1, str2) => {
+  if (str1.length - 1 > str2.length || str2.length - 1 > str1.length)
+    return false;
+
   let edits = 0;
   let idx1 = 0;
   let idx2 = 0;
