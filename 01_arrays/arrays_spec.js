@@ -45,7 +45,10 @@ describe('Rotate Matrix', () => {
   ];
 
   const anotherMatrix = [
-    [4, 8, 12, 15][(3, 7, 11, 15)][(2, 6, 10, 14)][(1, 5, 9, 13)],
+    [4, 8, 12, 16],
+    [3, 7, 11, 15],
+    [2, 6, 10, 14],
+    [1, 5, 9, 13],
   ];
 
   it('rotates the given matrix 90 degrees', () => {
@@ -55,7 +58,7 @@ describe('Rotate Matrix', () => {
       [9, 6, 3],
     ]);
 
-    expect(rotatematrix(anotherMatrix)).toEqual([
+    expect(rotateMatrix(anotherMatrix)).toEqual([
       [1, 2, 3, 4],
       [5, 6, 7, 8],
       [9, 10, 11, 12],

@@ -32,4 +32,20 @@ const binarySearch = (arr, target, start = 0) => {
 };
 
 //Rotate Matrix
-const rotateMatrix = (matrix) => {};
+const rotateMatrix = (matrix) => {
+  // original column index becomes row
+  // original row index reversed becomes column
+  const rotated = [];
+
+  for (let i = 0; i < matrix.length; i++) {
+    // column index using to create row
+    const row = [];
+    for (let j = matrix.length - 1; j >= 0; j--) {
+      // row index used to push to column in order
+      row.push(matrix[j][i]);
+    }
+    rotated.push(row);
+  }
+
+  return rotated;
+};
