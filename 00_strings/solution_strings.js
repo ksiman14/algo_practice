@@ -66,7 +66,7 @@ const oneEdit = (str1, str2) => {
   if (str1.length - 1 > str2.length || str2.length - 1 > str1.length)
     return false;
 
-  let edits = 0;
+  let edits = false;
   let idx1 = 0;
   let idx2 = 0;
 
@@ -75,7 +75,8 @@ const oneEdit = (str1, str2) => {
       idx1++;
       idx2++;
     } else {
-      edits++;
+      if (edits) return false;
+      edits = true;
       if (str1[idx1 + 1] === str2[idx2]) {
         idx1++;
       } else if (str1[idx1] === str2[idx2 + 1]) {
@@ -87,5 +88,5 @@ const oneEdit = (str1, str2) => {
     }
   }
 
-  return edits <= 1;
+  return true;
 };
