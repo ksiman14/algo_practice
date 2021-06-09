@@ -93,4 +93,24 @@ const oneEdit = (str1, str2) => {
 
 // String Shrink
 
-const strShrink = (str) => {};
+const strShrink = (str) => {
+  let shrunkStr = '';
+  let idx = 0;
+
+  while (idx < str.length) {
+    let counter = 1;
+
+    while (idx + counter < str.length) {
+      if (str[idx] === str[idx + counter]) {
+        counter++;
+      } else {
+        break;
+      }
+    }
+
+    shrunkStr += `${str[idx]}${counter}`;
+    idx = idx + counter;
+  }
+
+  return str.length <= shrunkStr.length ? str : shrunkStr;
+};
