@@ -19,3 +19,9 @@ Given a sorted array of integers and a target integer, use a Binary Search algor
 Given an NxN matrix, write a function to rotate the matrix by 90 degrees.
 
 Ex: [[1, 0], [0, 1]] -> [[0, 1], [1, 0]]
+
+#### One Matrix
+
+Given an MxN matrix, write a function to identify if an element is equal to 1, and if so, set the entire row and column to 1;
+
+Ex: [[1, 0], [3, 5], [3, 0]] -> [[1, 1], [1, 5], [1, 0]]

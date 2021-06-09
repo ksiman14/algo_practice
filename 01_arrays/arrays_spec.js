@@ -80,3 +80,43 @@ describe('Rotate Matrix', () => {
     expect(rotateMatrix([])).toEqual([]);
   });
 });
+
+describe('One Matrix', () => {
+  it("sets the element's row and column to all 1's if the element is a 1", () => {
+    expect(
+      oneMatrix([
+        [1, 2, 3],
+        [0, 0, 0],
+        [7, 2, 5],
+      ])
+    ).toEqual([
+      [1, 1, 1],
+      [1, 0, 0],
+      [1, 2, 5],
+    ]);
+
+    expect(
+      oneMatrix([
+        [1, 2, 1],
+        [0, 0, 0],
+      ])
+    ).toEqual([
+      [1, 1, 1],
+      [1, 0, 1],
+    ]);
+  });
+
+  it("does not modify the matrix if it does not contain any 1's", () => {
+    expect(oneMatrix[([0], [0])]).toEqual([[0], [0]]);
+
+    expect(
+      oneMatrix([
+        [2, 7, 6],
+        [5, 3, 8],
+      ])
+    ).toEqual([
+      [2, 7, 6],
+      [5, 3, 8],
+    ]);
+  });
+});

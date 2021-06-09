@@ -21,6 +21,7 @@ Arrays:
 - Two Sum
 - Binary Search
 - Rotate Matrix
+- One Matrix
 
 Linked Lists:
 
