@@ -19,4 +19,4 @@ const removeDuplicates = (head) => {
 
 // Nth to Last
 
-const nthToLast = (head) => {};
+const nthToLast = (head, n) => {};

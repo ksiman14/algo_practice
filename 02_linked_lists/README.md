@@ -6,4 +6,6 @@ Given the head of a sorted singly-linked list, write a function that returns a m
 
 #### Return Nth to Last
 
-Write a function to find the nth to last element of a singly-linked list.
+Given a positive integer n, write a function to find the nth to last element of a singly-linked list.
+
+- What should we return if n is greater than the length of the linked list? _Null_

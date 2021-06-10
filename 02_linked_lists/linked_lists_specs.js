@@ -35,4 +35,8 @@ describe('Return Nth to Last', () => {
     expect(nthToLast(target, 4)).toBe(target.next);
     expect(nthToLast(target, 2)).toBe(target.next.next.next);
   });
+
+  it('returns null if n is greater than the length of the linked list', () => {
+    expect(nthToLast(target, 6)).toEqual(null);
+  });
 });
