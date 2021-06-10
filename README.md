@@ -27,6 +27,7 @@ Arrays:
 Linked Lists:
 
 - Remove Duplicates
+- Return Nth to Last
 
 Trees and Graphs:
 

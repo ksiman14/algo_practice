@@ -16,3 +16,7 @@ const removeDuplicates = (head) => {
 
   return head;
 };
+
+// Nth to Last
+
+const nthToLast = (head) => {};
