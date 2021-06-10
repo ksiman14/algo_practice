@@ -38,3 +38,13 @@ Ex: 'baaaa' -> 'b1a4'
 Ex: 'mississippi' -> 'mississippi' ('m1i1s2i1s2i1p2i1' is longer)
 
 - Should the function be case-sensitive? _No_
+
+#### String Rotation
+
+Given two strings, write a function that returns true if the second string is a rotation of the first string, and false if not.
+
+Ex: 'abcde', 'cdeab' -> true
+Ex: 'happy', 'pahpy' -> false
+
+- Should the function be case-sensitive? _No_
+- What should it return if the two strings are the same? _True_

@@ -15,6 +15,7 @@ Strings:
 - Palindrome Permutation
 - One Edit
 - String Shrink
+- String Rotation
 
 Arrays:
 

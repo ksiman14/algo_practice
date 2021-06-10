@@ -95,3 +95,28 @@ describe('String Shrink', () => {
     expect(strShrink('hello')).toBe('hello');
   });
 });
+
+describe('String Rotation', () => {
+  it('returns true if the second string is a rotation of the first', () => {
+    expect(isRotation('smoothie', 'othiesmo')).toBe(true);
+    expect(isRotation('pencil', 'pencil')).toBe(true);
+  });
+
+  it('returns false if the second string is not a rotation of the first', () => {
+    expect(isRotation('soap', 'posa')).toBe(false);
+    expect(isRoation('towel', 'weltso')).toBe(false);
+  });
+
+  it('is not case sensitive', () => {
+    expect(isRotation('sMOothiE', 'othiesmo')).toBe(true);
+  });
+
+  it('returns true if both strings are empty', () => {
+    expect(isRotation('', '')).toBe(true);
+  });
+
+  it('returns false if just one string is empty', () => {
+    expect(isRotation('hello', '')).toBe(false);
+    expect(isRotation('', 'hello')).toBe(false);
+  });
+});
