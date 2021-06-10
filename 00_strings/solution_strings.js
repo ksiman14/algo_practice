@@ -114,3 +114,42 @@ const strShrink = (str) => {
 
   return str.length <= shrunkStr.length * 2 ? str : shrunkStr.join('');
 };
+
+// String Rotation
+const isRotation = (str1, str2) => {
+  if (str1.length !== str2.length) return false;
+  if (str1 === str2) return true;
+
+  let idx1 = 0;
+  let idx2 = 0;
+  const offsets = [];
+
+  while (idx2 < str2.length) {
+    if (str1[idx1].toLowerCase() === str2[idx2].toLowerCase()) {
+      offsets.push(idx2 - idx1);
+    }
+    idx2++;
+  }
+
+  while (offsets.length) {
+    const offset = offsets.shift();
+    for (let i = 0; i < str1.length; i++) {
+      if (i + offset >= str1.length) {
+        if (
+          str1[i].toLowerCase() !==
+          str2[i - (str1.length - offset)].toLowerCase()
+        ) {
+          if (offsets.length < 1) return false;
+          break;
+        }
+      } else {
+        if (str1[i].toLowerCase() !== str2[i + offset].toLowerCase()) {
+          if (offsets.length < 1) return false;
+          break;
+        }
+      }
+    }
+  }
+
+  return true;
+};

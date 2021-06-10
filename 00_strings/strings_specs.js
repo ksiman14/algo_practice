@@ -104,7 +104,7 @@ describe('String Rotation', () => {
 
   it('returns false if the second string is not a rotation of the first', () => {
     expect(isRotation('soap', 'posa')).toBe(false);
-    expect(isRoation('towel', 'weltso')).toBe(false);
+    expect(isRotation('towel', 'weltso')).toBe(false);
   });
 
   it('is not case sensitive', () => {
