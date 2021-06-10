@@ -107,7 +107,7 @@ describe('One Matrix', () => {
   });
 
   it("does not modify the matrix if it does not contain any 1's", () => {
-    expect(oneMatrix[([0], [0])]).toEqual([[0], [0]]);
+    expect(oneMatrix([[0], [0]])).toEqual([[0], [0]]);
 
     expect(
       oneMatrix([
