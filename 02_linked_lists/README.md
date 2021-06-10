@@ -8,4 +8,6 @@ Given the head of a sorted singly-linked list, write a function that returns a m
 
 Given a positive integer n, write a function to find the nth to last element of a singly-linked list.
 
+Ex: (1 -> 2 -> 3, 2) -> 2
+
 - What should we return if n is greater than the length of the linked list? _Null_

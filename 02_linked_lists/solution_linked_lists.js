@@ -19,4 +19,21 @@ const removeDuplicates = (head) => {
 
 // Nth to Last
 
-const nthToLast = (head, n) => {};
+const nthToLast = (head, n) => {
+  let current = head;
+  let nth = null;
+  let i = 0;
+
+  while (current) {
+    if (i - n === -1) {
+      nth = head;
+    } else if (i - n > -1) {
+      nth = nth.next;
+    }
+
+    current = current.next;
+    i++;
+  }
+
+  return nth;
+};
