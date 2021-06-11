@@ -30,6 +30,23 @@ describe('Remove duplicates', () => {
   });
 });
 
+describe('Delete Node', () => {
+  const list1 = new LinkedList(1);
+  list1.next = new LinkedList(2);
+  list1.next.next = new LinkedList(3);
+  list1.next.next.next = new LinkedList(4);
+
+  const list2 = new LinkedList(1);
+  list2.next = new LinkedList(2);
+  list2.next.next = new LinkedList(4);
+
+  it('removes the given node from the linked list', () => {
+    deleteNode(list1.next.next);
+    expect(list1).toBe(list1);
+    expect(list1).toEqual(list2);
+  });
+});
+
 describe('Return Nth to Last', () => {
   it('finds the nth to last element of a singly linked list', () => {
     expect(nthToLast(target, 4)).toBe(target.next);

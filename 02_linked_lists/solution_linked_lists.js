@@ -17,6 +17,13 @@ const removeDuplicates = (head) => {
   return head;
 };
 
+// Delete node
+
+const deleteNode = (node) => {
+  node.value = node.next.value;
+  node.next = node.next.next;
+};
+
 // Nth to Last
 
 const nthToLast = (head, n) => {

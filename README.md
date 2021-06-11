@@ -27,6 +27,7 @@ Arrays:
 Linked Lists:
 
 - Remove Duplicates
+- Delete Node
 - Return Nth to Last
 
 Trees and Graphs:
