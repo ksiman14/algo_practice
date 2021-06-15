@@ -48,22 +48,6 @@ const nthToLast = (head, n) => {
 // is Palindrome
 const isPalindrome = (head) => {
   let runner = head;
-  // const values = [];
-
-  // while (runner) {
-  //   values.push(runner.value);
-  //   runner = runner.next;
-  // }
-
-  // runner = head;
-
-  // while (values.length) {
-  //   const last = values.pop();
-  //   if (runner.value !== last) return false;
-  //   runner = runner.next;
-  // }
-
-  // return true;
   let length = 0;
 
   while (runner) {
