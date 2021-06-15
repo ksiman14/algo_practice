@@ -15,3 +15,10 @@ Given a positive integer n, write a function to find the nth to last element of 
 Ex: (1 -> 2 -> 3, 2) -> 2
 
 - What should we return if n is greater than the length of the linked list? _Null_
+
+#### Is Palindrome
+
+Given the head of a singly-linked list, return true if the list is a palindrome, false if not.
+
+Ex: (1 -> 2 -> 1) -> true
+Ex: (1 -> 2 -> 3) -> false

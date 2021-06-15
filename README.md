@@ -29,6 +29,7 @@ Linked Lists:
 - Remove Duplicates
 - Delete Node
 - Return Nth to Last
+- Palindrome
 
 Trees and Graphs:
 

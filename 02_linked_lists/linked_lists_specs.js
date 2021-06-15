@@ -57,3 +57,27 @@ describe('Return Nth to Last', () => {
     expect(nthToLast(target, 6)).toEqual(null);
   });
 });
+
+describe('Is Palindrome', () => {
+  const list1 = new LinkedList(3);
+  list1.next = new LinkedList(3);
+
+  const list2 = new LinkedList(5);
+  list2.next = new LinkedList(7);
+  list2.next.next = new LinkedList(-1);
+  list2.next.next.next = new LinkedList(7);
+  list2.next.next.next.next = new LinkedList(5);
+
+  const list3 = new LinkedList(-2);
+  list3.next = new LinkedList(-1);
+  list3.next.next = new LinkedList(0);
+
+  it('returns true if the list is a palindrome', () => {
+    expect(isPalindrome(list1)).toBe(true);
+    expect(isPalindrome(list2)).toBe(true);
+  });
+
+  it('returns false if the list is not a palindrome', () => {
+    expect(isPalindrome(list3)).toBe(false);
+  });
+});

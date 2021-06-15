@@ -44,3 +44,6 @@ const nthToLast = (head, n) => {
 
   return nth;
 };
+
+// is Palindrome
+const isPalindrome = (head) => {};
